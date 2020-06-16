@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "CarWebsite": {
+    "M152-Project": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/CarWebsite",
+            "outputPath": "dist/M152-Project",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -62,18 +62,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "CarWebsite:build"
+            "browserTarget": "M152-Project:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "CarWebsite:build:production"
+              "browserTarget": "M152-Project:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "CarWebsite:build"
+            "browserTarget": "M152-Project:build"
           }
         },
         "test": {
@@ -110,15 +110,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "CarWebsite:serve"
+            "devServerTarget": "M152-Project:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "CarWebsite:serve:production"
+              "devServerTarget": "M152-Project:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "CarWebsite"
+  "defaultProject": "M152-Project"
 }
