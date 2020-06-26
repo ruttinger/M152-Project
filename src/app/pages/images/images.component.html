@@ -1,1 +1,4 @@
-<p>images works!</p>
+<div *ngFor="let image of images" class="gallery">
+  <img src="{{ 'assets/photos/' + image.url }}">
+  <div class="desc">{{image.desc}}</div>
+</div>
